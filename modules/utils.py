@@ -66,7 +66,7 @@ def hrt(seconds, precision = 0):
 
 timer = Timer()
 
-# Powered By @imtrigo
+# Powered By Ankush
 async def progress_bar(current, total, reply, start):
     if timer.can_send():
         now = time.time()

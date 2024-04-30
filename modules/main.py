@@ -98,7 +98,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send**   **`TriGO`**")
+    await editable.edit("**Enter A Captio to add Otherwise send**   **`Ankush`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -108,7 +108,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the **Thumb url**\nEg : `https://telegra.ph/file/ddd5fc28065feea54092d.jpg`\n\nor Send `no`")
+    await editable.edit("Now send the **Thumb url**\nEg : `https://telegra.ph/file/15d338d5d116a1e591a10.jpg`\n\nor Send `no`")
     input6: Message = await bot.listen(editable.chat.id, filters.user(m.from_user.id))
     await input6.delete(True)
     await editable.delete()
@@ -185,7 +185,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ✨❤️TriGOTeam❤️✨\n\n**𝔻𝕄 𝔽ᴏʀ 𝔹ᴜʏ 𝕋ʜɪ𝕤 𝔹ᴏᴛ @imtrigo**"
+                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ✨❤️🅰️🅽🅺🆄🆂🅷❤️✨\n\n**𝔻𝕄 𝔽ᴏʀ 𝔹ᴜʏ 𝕋ʜɪ𝕤 𝔹ᴏᴛ @lordddd_raaaambot**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
